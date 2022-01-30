@@ -1,0 +1,9 @@
+#timer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#counter {
+    display: flex;
+    flex-direction: column;
+}
