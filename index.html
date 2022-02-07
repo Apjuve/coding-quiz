@@ -8,18 +8,59 @@
     <title>Start Quiz</title>
 </head>
 <body>
-    <header>
-        <div id="timer">
-            <div id="counter">
-            <h2 id="time">0</h2>
-            <p>second remaining</p>
+    <button class="highscores-section" id="start-highscores"></button>
+
+    <header id="header">
+        <button class="highscores-section" id="quiz-highscores"></button>
+        <div class="timer-textbox">
+            <div class="timer-count">
+            <h2 class="secondsTextbox">seconds remaining</h2>
+            
         </div>
         </div>
     </header>
-    <main>
-        <div id="quiz">Quiz</div>
+    <main id="main"> 
+        <!-- diiv that displays when ffirst booted -->
+        <div class="start-div">    
+        <h1>coding Quiz</h1>
+        <p>Quiz reviewing some of the material learned to this point.</p>
         <button id="submit">Start Quiz</button>
-        <div id="results"></div>
+       </div>
+
+       <div class="quiz-textbox">
+        <h1 id="quiz-title">HTML, CSS, JavaScript Quiz</h1>
+        <p id="questionBox"></p>
+        <button class="option-style" id="choicesA"></button>
+        <button class="option-style" id="choicesB"></button>
+        <button class="option-style" id="choicesC"></button>
+        <button class="option-style" id="choicesD"></button>
+        <!-- line that displays wrong or correct feed back -->
+        <p id="reviewChoice"></p>
+        </div>
+
+
+
+        <!-- for that contains input and submit buttons -->
+        <form id="form">
+            <h1 id="scoreText"></h1>
+            <fieldset>
+                <legend>user entry</legend>
+                <label for="initials" id="initials-label">Enter Initals Here</label><br>
+                <input type="text" id="initials" name="initials"><br>
+                <input class="option-style" type="submit" value="submit" id="submit-button">
+            </fieldset>
+
+            <h3 class="submit-message"></h3>
+        </form>
+
+        <div id="highscores">
+            <button type="button" id="back" class="option-style">Go Back</button>
+            <button type="button" id="clear" class="option-style">Clear Highscore</button>
+
+            <div id="highscores-section"></div>
+
+            <p id="clearText">Clear HighScores</p>
+        </div>
         
     </main>
     <script src="./assets/js/quiz.js"></script>

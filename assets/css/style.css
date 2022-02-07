@@ -1,9 +1,99 @@
-#timer {
-    display: flex;
-    justify-content: flex-end;
+header {
+    opacity: 0;
 }
 
-#counter {
+/* backgroung color to page */
+body {
+    background-color: rgb(223, 223, 223);
+}
+/* align timer to thhe top riight */
+.timer-textbox {
+    vertical-align: text-top;
+    display: inline;
+    float: right;
+}
+
+/* highscore button is set to top left */
+.highscores-section {
+    display: inline;
+    float: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(143, 205, 255);
+}
+.start-div {
+    margin-top: 75px;
+}
+
+#submit {
+    width: 50px;
+    height: 35px;
+    padding: 5px;
+    background-color: rgb(143, 205, 255);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#submit:hover {
+    filter: brightness(120%);
+}
+
+.option-style {
+    margin-bottom: 5px;
+    background-color: rgb(143, 205, 255);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.option-style:hover {
+    filter: brightness(120%);
+}
+.quiz-textbox {
+    display: none;
+    margin-top: 75px;
+}
+main {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+fieldset {
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#initials {
+    margin-top: 10px;
+}
+#submit-button {
+    margin-top: 10px;
+}
+#choicesA {
+    display: none;
+}
+#choicesB {
+    display: none;
+}
+#choicesC {
+    display: none;
+}
+#choicesD {
+    display: none;
+}
+#form {
+    display: none;
+    margin-top: 75px;
+}
+#highscores {
+    display: none;
+    margin-top: 75px;
+}
+#clearedText {
+    display: none;
+}
+/* iff initials are not inputted textbox will display a messaage */
+.error {
+    color: red;
 }
